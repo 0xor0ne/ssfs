@@ -1,0 +1,24 @@
+[package]
+name = "ssfs"
+version = "0.1.0"
+edition = "2021"
+authors = ["0xor0ne <0xor0ne@gmail.com"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/0xor0ne/sshttps"
+documentation = "https://docs.rs/sshttps"
+homepage = "https://github.com/0xor0ne/sshttps/blob/master/README.md"
+readme = "README.md"
+keywords = ["cli", "tls", "http", "networking", "https", "server"]
+categories = ["command-line-utilities", "network-programming"]
+description = """
+Simple HTTPS static file server with embedded self signed certificate
+"""
+
+[dependencies]
+actix-web = { version = "4.3.1", features = ["rustls"] }
+actix-files = "0.6.2"
+rustls = "0.20"
+rustls-pemfile = "1.0.2"
+tokio-rustls = "0.24.0"
+argh = "0.1.10"
+
