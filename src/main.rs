@@ -64,7 +64,6 @@ fn load_cert() -> Vec<Certificate> {
 
 fn load_key() -> PrivateKey {
     let key_bytes = include_bytes!("../assets/key.pem");
-    println!("{:?}", key_bytes);
     let mut key_reader = std::io::Cursor::new(key_bytes);
 
     match read_one(&mut key_reader).expect("cannot parse private key .pem file") {
