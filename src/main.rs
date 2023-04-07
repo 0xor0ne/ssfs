@@ -12,7 +12,7 @@ struct Args {
     ip: String,
 
     /// port to bind to
-    #[argh(option, default = "1666")]
+    #[argh(option, default = "8443")]
     port: u16,
 }
 
