@@ -8,7 +8,7 @@ repository = "https://github.com/0xor0ne/sshttps"
 documentation = "https://docs.rs/sshttps"
 homepage = "https://github.com/0xor0ne/sshttps/blob/master/README.md"
 readme = "README.md"
-keywords = ["cli", "tls", "http", "networking", "https", "server"]
+keywords = ["tls", "http", "networking", "https", "server"]
 categories = ["command-line-utilities", "network-programming"]
 description = """
 Simple HTTPS static file server with embedded self signed certificate
