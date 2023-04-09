@@ -17,6 +17,7 @@ Simple HTTPS static file server with embedded self signed certificate
 [dependencies]
 actix-web = { version = "4.3.1", features = ["rustls"] }
 actix-files = "0.6.2"
+env_logger = "0.10.0"
 rustls = "0.20"
 rustls-pemfile = "1.0.2"
 tokio-rustls = "0.24.0"
